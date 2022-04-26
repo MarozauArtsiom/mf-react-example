@@ -1,0 +1,12 @@
+{
+  "name": "build-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "Artsiom.Marozau",
+  "license": "ISC"
+}
