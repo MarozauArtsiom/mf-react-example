@@ -39,9 +39,6 @@ module.exports = {
       name: 'component_app',
       filename: 'remoteEntry.js',
       exposes: getExposedFiles('./src'),
-      remotes: {
-        'lib-app': 'lib_app@http://localhost:6969/lib-app/remoteEntry.js',
-      },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
