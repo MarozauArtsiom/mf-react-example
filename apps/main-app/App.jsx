@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from 'component-app/Button';
-import Dialog from 'component-app/Dialog';
-import ToolTip from 'component-app/ToolTip';
+import {Button, Dialog, ToolTip} from '@kr/common';
 export default class App extends React.Component {
   constructor(props) {
     super(props);

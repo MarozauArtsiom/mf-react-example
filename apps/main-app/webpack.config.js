@@ -1,6 +1,4 @@
-const { ModuleFederationPlugin } = require('webpack').container;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 module.exports = {
   entry: './index.js',
   mode: 'development',
@@ -26,12 +24,13 @@ module.exports = {
           presets: ['@babel/preset-react'],
         },
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
-    new ModuleFederationPlugin({
-      name: 'main_app',
-    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
