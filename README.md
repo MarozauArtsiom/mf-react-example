@@ -19,6 +19,7 @@ in root:
 ## Refactor plan
 
 - [ ] Deprecate lerna
+  - [ ] Goal: build cache, stable work  
   - [ ] Replace with tool with tool from [list](https://betterprogramming.pub/lerna-is-officially-dead-long-live-monorepos-9853c80a7b0e?gi=74ba2a92c208)
   - [ ] make similar commands for all packages
     - build - should build project
