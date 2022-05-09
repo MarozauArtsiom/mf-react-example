@@ -5,8 +5,10 @@ module.exports = {
   mode: 'development',
   devtool: 'hidden-source-map',
   output: {
-    library: 'CommonComponents',
-    libraryTarget: 'umd',
+    library: {
+      name: 'CommonComponents',
+      type: 'umd'
+    },
     filename: 'common-components.js',
     path: path.resolve(__dirname, 'dist'),
   },
