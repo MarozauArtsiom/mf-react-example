@@ -1,12 +1,16 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: './index.js',
   mode: 'development',
   devtool: 'hidden-source-map',
   output: {
-    publicPath: 'http://localhost:3001/',
-    clean: true,
+    library: {
+      name: 'CommonComponents',
+      type: 'umd'
+    },
+    filename: 'common-components.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json', '.css', '.scss', '.jpg', 'jpeg', 'png'],
@@ -31,9 +35,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
 };
