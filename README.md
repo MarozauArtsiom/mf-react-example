@@ -30,3 +30,5 @@ in root:
 - [ ] One-web should has menu
 - [ ] One-web app should import projects with module federation
 - [ ] Research load projects with lazy loading for one-web?
+- [ ] Add one more package for npm
+- [ ] Add one more project in apps
